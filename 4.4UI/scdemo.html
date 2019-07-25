@@ -1,0 +1,66 @@
+<html>
+<head>
+	<script>
+			
+	function greet()
+	{
+		var n1 = document.getElementById("mi").value;
+		alert("Welcome: "+n1);
+		//doucment.getElementById("s1").innerText=t.value;	
+	}	
+	function valid()
+	{
+		if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.email.value))
+		{
+			password()
+		}
+		else{
+				//alert("You have entered an invalid email address!")
+				document.write("You have entered an invalid email address!");
+					
+	    
+		}
+		
+	}	
+	function password()
+	{
+		var n1 = document.getElementById("t3").value;
+		var n2 = document.getElementById("t4").value;
+		if(n1==n2)
+		{
+		   alert("Registration done successfully")
+		}
+		else{
+		alert("Password is not matched")
+		}
+		
+		
+	}	
+	
+	
+	
+	</script>
+
+
+
+
+
+
+</head>
+<body>
+<form name="myForm">
+	<pre>
+	Username: 		  <input type="text" name="name" id="t1" ><br>
+	Email: 			  <input type="text" name="email" id="t2" onchange="valid()"><br>
+	Password: 		  <input type="text" name="pwd" id="t3"><br>
+	Confirm Password: 	  <input type="text" name="cpwd" id="t4"onchange="password()"><br>
+    
+	
+	<button onclick="window.location.href='/page2">Register</button>
+	</pre>
+	
+	
+	
+<form>	
+</body>
+</html

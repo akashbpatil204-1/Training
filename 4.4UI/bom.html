@@ -1,0 +1,150 @@
+<html>
+<head>
+	<script>
+	function abc()
+		{	
+			res = confirm("seriously?");
+			if(res)
+				close();
+			else
+				alert("You choose to..");
+			
+			
+		}
+		
+	function greet()
+	{
+		var n1 = document.getElementById("mi").value;
+		alert("Welcome: "+n1);
+		//doucment.getElementById("s1").innerText=t.value;	
+	}	
+	function add()
+	{
+	
+	    
+		var n1 = document.getElementById("mi1").value;
+		var n2 = document.getElementById("mi2").value;
+		
+		if(isNaN(n1))
+		{
+			document.getElementById("res").innerText ="Not a number";
+		}
+		if(isNaN(n2))
+		{
+			document.getElementById("res").innerText ="Not a number";
+		}		
+		else
+		{
+			var result = +n1 + +n2;
+			document.getElementById("res").innerText =result;
+		}		
+		
+	}	
+	
+	function sub()
+	{
+	
+	    
+		var n1 = document.getElementById("mi1").value;
+		var n2 = document.getElementById("mi2").value;
+		
+		if(isNaN(n1))
+		{
+			document.getElementById("res").innerText ="Not a number";
+		}
+		if(isNaN(n2))
+		{
+			document.getElementById("res").innerText ="Not a number";
+		}		
+		else
+		{
+			var result = +n1 - +n2;
+			document.getElementById("res").innerText =result;
+		}		
+		
+	}	
+	
+	
+	function mul()
+	{
+	
+	    
+		var n1 = document.getElementById("mi1").value;
+		var n2 = document.getElementById("mi2").value;
+		
+		if(isNaN(n1))
+		{
+			document.getElementById("res").innerText ="Not a number";
+		}
+		if(isNaN(n2))
+		{
+			document.getElementById("res").innerText ="Not a number";
+		}		
+		else
+		{
+			var result = +n1 * +n2;
+			document.getElementById("res").innerText =result;
+		}		
+		
+	}	
+	
+	function div()
+	{
+	
+	    
+		var n1 = document.getElementById("mi1").value;
+		var n2 = document.getElementById("mi2").value;
+		
+		if(isNaN(n1))
+		{
+			document.getElementById("res").innerText ="Not a number";
+		}
+		if(isNaN(n2))
+		{
+			document.getElementById("res").innerText ="Not a number";
+		}		
+		else
+		{
+			var result = +n1 / +n2;
+			document.getElementById("res").innerText =result;
+		}		
+		
+	}	
+	
+	
+	</script>
+
+
+
+
+
+
+</head>
+<body>
+	<h1>Java Script demo</h1>
+	
+    <hr>
+	<script>
+	
+		var a=10;
+		a =new Date();
+		document.write("<br>Type of a:"+typeof(a));
+	</script>
+	<br>
+	
+	a: <input type="text" name="tf1" id="mi1"><br>
+	
+	b: <input type="text" name="tf2" id="mi2"><br>
+	
+	
+	<button onClick="add()">Add</button>
+	<button onClick="sub()">sub</button>
+	<button onClick="mul()">mul</button>
+	<button onClick="div()">div</button><br>
+	Result: <span id="res"></span>
+	
+	<br><br>
+	
+	<button onClick="abc()">Exit</button>
+</body>
+</html

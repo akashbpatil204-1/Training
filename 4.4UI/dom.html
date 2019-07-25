@@ -1,0 +1,61 @@
+<html>
+<head>
+	<script>
+	var f =true;
+	function abc()
+	{
+		name=prompt("Enter name:");
+		document.getElementById("s1").innerText="welcom "+name;
+	}
+	function abc1()
+	{
+		name=prompt("Enter name:");
+		document.getElementById("s1").innerText="welcome "+name;
+	}
+	function xyz()
+	{
+		
+		var uu="Username:<input type='text' name='name' id='t1'><br><button>Register</button>";
+		
+		if(f)
+		{
+			document.getElementById("s1").innerHTML=uu;
+			document.getElementById("p1").innerText="Hide Login";
+		}
+		else
+		{
+			document.getElementById("s1").innerHTML="";
+			document.getElementById("p1").innerText="Show Login";
+		}
+		f=!f;
+	}
+	
+	</script>
+
+
+
+
+
+
+</head>
+<body>
+	<h1>Javascript dom demo</h1>
+	
+    <hr>
+	<script>
+		document.write("<br>"+location.protocol);
+		//location.href="";
+		document.write("<br>"+navigator.appCodeName);
+		document.write("<br>"+navigator.appVersion);
+	</script>
+	<br>
+	
+
+	<br><br>
+	
+	<button onClick="abc()">yo</button>
+	
+	<p onClick="xyz()" id="p1">login</p>
+	<span id="s1"></span>
+</body>
+</html

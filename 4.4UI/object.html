@@ -1,0 +1,54 @@
+<html>
+<head>
+	<script>
+	function Emp(name ,age) //constructor of objetc
+		{
+			this.name =name;
+			this.age=age;
+		}
+	
+	</script>
+
+
+
+
+
+
+</head>
+<body>
+	<h1>Custom obj</h1>
+	<hr>
+	<script>
+		obj = new  Object();//1 .create obj
+		obj.name="Ravi";
+		obj.age= 25;
+		document.write("<br><br>Name:"+obj.name);
+		document.write("<br><br>Age:"+obj.age);
+		obj1 = new  Object();
+		obj1.name="Ravi1";
+		obj1.age= 251;
+		document.write("<br><br>Name:"+obj1.name);
+		document.write("<br><br>Age:"+obj1.age);
+		document.write("<hr>");
+		obj2 = new Emp("akash",25);//2 .create obj through constructor
+
+		document.write("<br><br>Name:"+obj2.name);
+		document.write("<br><br>Age:"+obj2.age);
+		document.write("<hr>");
+
+		j1 = {'name':'ram','age':'23'};//3 .create obj through json
+
+		document.write("<br><br>Name:"+j1.name);
+		document.write("<br><br>Age:"+j1.age);
+		document.write("<hr>");
+
+		document.write("<br>"+Math.PI);//math object
+
+		document.write("<br>"+Math.random());
+
+		var n = Math.random()*28; //random num upto 28
+		document.write("<br>"+parseInt(n));
+
+	</script>
+</body>
+</html>

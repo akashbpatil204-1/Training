@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript">
+  function check(){
+    var n1 = document.getElementById("pass1").value;
+    var n2 = document.getElementById("pass2").value;
+    if(n1!=n2){
+      document.getElementById("valid").innerText="Passwords do not match";
+    }
+    else{
+      document.getElementById("valid").innerText="";
+    }
+  }
+
+  function validate(){
+    var n1 = document.getElementById("user").value;
+    if(n1.length<7) {
+      document.getElementById("v1").innerText="Username should be greater than 7 chars";
+      return false;
+    }
+    else
+      return true;
+  }
+</script>
+</head>
+<body>
+
+<form onsubmit="return validate()" >
+  <div class="container">
+    <h1>Register</h1>
+    <hr>
+
+    <input type="text" placeholder="Enter Username" id="user"><span id="v1"></span>
+    <br>
+
+    <input type="email" placeholder="Enter Email" name="email" required>
+    <br>
+    
+    <input type="password" placeholder="Enter Password" id="pass1" required>
+    <br>
+
+    <input type="password" placeholder="Repeat Password" oninput="check()"  id="pass2" required><span id="valid"></span>
+    <hr>
+    
+    <button type="submit" class="registerbtn" >Register</button>
+  </div>
+  
+</form>
+
+</body>
+</html>

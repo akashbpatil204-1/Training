@@ -1,0 +1,48 @@
+<html>
+<head>
+
+
+
+
+
+
+</head>
+<body>
+<form name="myForm">
+	<pre>
+	   <span id="v1"></span>
+    <br>
+	<button id="start" >Start</button>
+	<button id="stop">Stop</button>
+	</pre>
+	
+	
+	
+<form>	
+	<script>
+	let handle;
+	let count=0;
+let timeOutInterval1 =(time =1000 , msg="default")=>{
+	console.log("aaaaa");
+    handle = setInterval((msg)=>{
+        console.log("adfg");
+        document.querySelector('#v1').innerHTML = ++counter;
+    },time*1000,msg)
+}
+
+	 document.querySelector('#start').addEventListener('click' , function(){
+	 	timeOutInterval1();
+	 });
+
+	 document.querySelector('#stop').addEventListener('click' , function(){
+	 	count=0;
+
+	 document.querySelector('#v1').innerHTML = count;
+	 clearInterval(handle);
+	 });
+	 
+
+	
+	</script>	
+</body>
+</html

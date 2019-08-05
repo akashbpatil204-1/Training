@@ -1,0 +1,39 @@
+<html>
+<head>
+
+
+
+
+
+
+</head>
+<body>
+<form name="myForm">
+
+	<pre>
+	   <span id="v1"></span>
+    <br>
+	<button id="start" >Start</button>
+
+	</pre>
+	
+	
+	
+<form>	
+	<script>
+
+	 let promise = fetch('https://jsonplaceholder.typicode.com/users')
+	 const rootElem = document.querySelector('#users');
+
+
+	 let data = {};
+	 promise.then(response=> response.json())
+	 .then(users =>
+	 	{
+	 		return users.map(user =>`<li>${users.username}</li>`)})
+
+	 console.log(`<li>${users.username}</li>`);
+	 	//	.then
+	</script>	
+</body>
+</html
